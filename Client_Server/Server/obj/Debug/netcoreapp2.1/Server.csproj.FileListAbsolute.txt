@@ -1,0 +1,11 @@
+D:\Projects\c#\Сети\Client_Server\Server\bin\Debug\netcoreapp2.1\Server.deps.json
+D:\Projects\c#\Сети\Client_Server\Server\bin\Debug\netcoreapp2.1\Server.runtimeconfig.json
+D:\Projects\c#\Сети\Client_Server\Server\bin\Debug\netcoreapp2.1\Server.runtimeconfig.dev.json
+D:\Projects\c#\Сети\Client_Server\Server\bin\Debug\netcoreapp2.1\Server.dll
+D:\Projects\c#\Сети\Client_Server\Server\bin\Debug\netcoreapp2.1\Server.pdb
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.csprojAssemblyReference.cache
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.csproj.CoreCompileInputs.cache
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.AssemblyInfoInputs.cache
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.AssemblyInfo.cs
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.dll
+D:\Projects\c#\Сети\Client_Server\Server\obj\Debug\netcoreapp2.1\Server.pdb
