@@ -1,0 +1,53 @@
+﻿<Window x:Class="NetExamChatClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetExamChatClient"
+        mc:Ignorable="d"
+        Title="Онлайн чат :c" Height="450" Width="800">
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="0 0 0 10">
+                <TextBlock Text="IP: "/>
+                <TextBox Width="150" Margin="0 0 10 0" Text="{Binding Ip, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Port:"/>
+                <TextBox Width="50" Margin="0 0 10 0" Text="{Binding Port, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Name:"/>
+                <TextBox Width="100" Margin="0 0 10 0" Text="{Binding Name, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <TextBlock Text="Pass:"/>
+                <TextBox Width="100" Margin="0 0 10 0" Text="{Binding Pass, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+
+                <Button Content="Conn" Command="{Binding ConnectCommand}"/>
+            </StackPanel>
+
+            <TextBox Grid.Row="1" TextWrapping="Wrap" AcceptsReturn="True" IsReadOnly="True" Margin="0 0 0 10" Text="{Binding TextArea}"/>
+            <TextBox Grid.Row="2" Height="30" Text="{Binding CurentMess, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding SendCommand}"/>
+                </TextBox.InputBindings>
+            </TextBox>
+        </Grid>
+        <Grid Grid.Column="1" Margin="10 0 0 0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Юзвери"/>
+
+            <ListBox Grid.Row="1" HorizontalContentAlignment="Center" ItemsSource="{Binding Users}"/>
+        </Grid>
+    </Grid>
+</Window>
